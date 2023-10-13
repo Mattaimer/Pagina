@@ -1,0 +1,120 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  list-style: none;
+  text-decoration: none;
+  background-color: rgb(51, 32, 63);
+
+
+
+}
+.middle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  
+}
+
+.box{
+  width: 150px;
+  height: 150px;
+  background-image: url(dad.jpg);
+  background-size: cover;
+  border-radius: 50%;
+  margin: auto;
+}
+
+
+.menu {
+  width: 400px;
+  overflow: hidden;
+  border-radius: 8px;
+  -webkit-border-radius: px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.item {
+  border-top: 1px solid rgb(51, 32, 63);
+  overflow: hidden;
+}
+.btn {
+  display: block;
+  padding: 20px 20px;
+  background: #7c0cb9;
+  color: white;
+  position: relative;
+}
+.btn:before{
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background: #7c0cb9;
+  z-index: 9999;
+  left: 20px;
+  bottom: -7px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+.btn i {
+  margin-right: 10px;
+  background: none;
+}
+.smenu {
+  overflow:hidden;
+  max-height: 0;
+  transition: max-height 0.4s;
+  -webkit-transition: max-height 0.4s;
+  -moz-transition: max-height 0.4s;
+  -ms-transition: max-height 0.4s;
+  -o-transition: max-height 0.4s;
+}
+.smenu a {
+  display: block;
+  padding: 16px 26px;
+  color: #fff;
+  font-size: 14px;
+  margin: 4px 0;
+  position: relative;
+  background:#1C0F24;
+}
+.smenu a:before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background-color: #4A1F66;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.smenu a:hover:before {
+  opacity: 1;
+}
+
+.item:target .smenu {
+  max-height: 55em;
+}
+
+h1{
+  color: #fff;
+   text-align: center;
+   
+
+}
+
