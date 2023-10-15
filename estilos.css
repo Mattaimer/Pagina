@@ -24,6 +24,7 @@ h1{
 
 
 *{
+  
   margin: 0;
   padding: 0;
   font-family: sans-serif;
@@ -33,6 +34,7 @@ h1{
 
 }
 .middle{
+
   position: absolute;
   top: 50%;
   left: 50%;
@@ -52,7 +54,7 @@ h1{
   background-size: cover;
   border-radius: 50%;
   margin: auto;
-  
+
 }
 
 .menu {
@@ -100,10 +102,13 @@ h1{
   -o-transform: rotate(45deg);
 }
 .btn i {
+
   margin-right: 10px;
   background: none;
+
 }
 .smenu {
+
   overflow:hidden;
   max-height: 0;
   transition: max-height 0.4s;
@@ -114,7 +119,6 @@ h1{
 }
 .smenu a {
 
-  
   font-family: "Oswalde";
  font-weight: normal;
 
@@ -126,7 +130,6 @@ h1{
   margin: 4px 0;
   position: relative;
   background:#1C0F24;
-
 
 }
 .smenu a:before {
@@ -154,7 +157,6 @@ h1{
 
 p {
 
-  
   font-family: "Oswalde";
  font-weight: normal;
 
