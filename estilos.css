@@ -1,3 +1,28 @@
+
+@font-face {
+font-family: "Oswalde";
+src: url(/static/Oswald-Bold.ttf);
+font-weight: bold;
+font-style: bold;
+}
+
+@font-face {
+  font-family: "Oswalde";
+  src: url(/static/Oswald-Medium.ttf);
+  font-weight: normal;
+  font-style: normal;
+  }
+
+h1{
+  font-size: 40px;
+ font-family: "Oswalde";
+ font-weight: bold;
+  color: #fff;
+  text-align: center;
+  padding: 10px 10px;
+}
+
+
 *{
   margin: 0;
   padding: 0;
@@ -5,8 +30,6 @@
   list-style: none;
   text-decoration: none;
   background-color: rgb(51, 32, 63);
-
-
 
 }
 .middle{
@@ -22,19 +45,20 @@
 }
 
 .box{
+
   width: 150px;
   height: 150px;
   background-image: url(dad.jpg);
   background-size: cover;
   border-radius: 50%;
   margin: auto;
+  
 }
-
 
 .menu {
   width: 400px;
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: 0px;
   -webkit-border-radius: px;
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
@@ -47,9 +71,18 @@
 .btn {
   display: block;
   padding: 14px 14px;
+
+  font-size: 20px;
+  font-family: "Oswalde";
+ font-weight: normal;
+
   background: #7c0cb9;
   color: white;
   position: relative;
+
+
+
+
 }
 .btn:before{
   content: "";
@@ -80,13 +113,21 @@
   -o-transition: max-height 0.4s;
 }
 .smenu a {
+
+  
+  font-family: "Oswalde";
+ font-weight: normal;
+
   display: block;
   padding: 16px 26px;
   color: #fff;
+
   font-size: 14px;
   margin: 4px 0;
   position: relative;
   background:#1C0F24;
+
+
 }
 .smenu a:before {
   content: "";
@@ -97,11 +138,11 @@
   left: 0;
   top: 0;
   opacity: 0;
-  transition: 0.3s;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -o-transition: 0.3s;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }
 .smenu a:hover:before {
   opacity: 1;
@@ -111,10 +152,19 @@
   max-height: 55em;
 }
 
-h1{
-  color: #fff;
-   text-align: center;
-   
+p {
 
+  
+  font-family: "Oswalde";
+ font-weight: normal;
+
+  display: block;
+  padding: 16px 26px;
+  color: #fff;
+  
+  font-size: 14px;
+  margin: 4px 0;
+  position: relative;
+  background:#1C0F24;
 }
 
