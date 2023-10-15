@@ -1,14 +1,14 @@
 
 @font-face {
 font-family: "Oswalde";
-src: url(/static/Oswald-Bold.ttf);
+src: url(/Oswald-Bold.ttf);
 font-weight: bold;
 font-style: bold;
 }
 
 @font-face {
   font-family: "Oswalde";
-  src: url(/static/Oswald-Medium.ttf);
+  src: url(/Oswald-Medium.ttf);
   font-weight: normal;
   font-style: normal;
   }
