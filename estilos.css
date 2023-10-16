@@ -14,7 +14,7 @@ font-style: bold;
   }
 
 h1{
-  font-size: 40px;
+  font-size: 30px;
  font-family: "Oswalde";
  font-weight: bold;
   color: #fff;
@@ -74,7 +74,7 @@ h1{
   display: block;
   padding: 14px 14px;
 
-  font-size: 20px;
+  font-size: 18px;
   font-family: "Oswalde";
  font-weight: normal;
 
@@ -126,7 +126,7 @@ h1{
   padding: 16px 26px;
   color: #fff;
 
-  font-size: 18px;
+  font-size: 14px;
   margin: 4px 0;
   position: relative;
   background:#1C0F24;
@@ -164,7 +164,7 @@ p {
   padding: 16px 26px;
   color: #fff;
   
-  font-size: 18px;
+  font-size: 14px;
   margin: 4px 0;
   position: relative;
   background:#1C0F24;
