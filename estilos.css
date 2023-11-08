@@ -152,7 +152,7 @@ h1{
 }
 
 .item:target .smenu {
-  max-height: 55em;
+  max-height: 150em;
 }
 
 p {
