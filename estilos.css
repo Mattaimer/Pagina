@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+ 
+*{
+    background-color: rgb(51, 32, 63);
+}
+
+.contenedor-acordeon{
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 30px;
+    background-color: rgb(51, 32, 63);
+}
+.contenedor-acordeon h2{
+    text-align: center;
+    font-size: 40px;
+    margin: 10px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+.acordeon{
+    background: #1C0F24;
+}
+.acordeon label{
+    cursor: pointer;
+    display: block;
+    padding: 20px;
+    font-size: 20px;
+    background: #7c0cb9;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 4px;
+    transition: all 300ms ease;
+}
+.acordeon label:hover{
+    background: #000000;
+}
+.acordeon .contenido-acordeon{
+    cursor: pointer;
+    padding: 0px;
+    margin: 0px 0px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 300ms ease;
+}
+.btn-acordeon:checked ~ .contenido-acordeon{
+    max-height: 1800px;
+    padding: 0px 0px;
+}
+.btn-acordeon{
+    display: none;
+}
+
+
+.botonp {
+ text-decoration: none;
+  width: 100%;
+  padding: 20px 20px;
+  display: block;
+  margin-bottom: 4px;
+  background-color: #1C0F24;
+  color: rgb(255, 255, 255);
+  border: none;
+  cursor: pointer;
+   }
+
+
+
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-image: url(dad.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    margin: auto;
+  }
+
+
+
+  .boton3 {
+
+    text-decoration: none;
+    font-size: 20px;
+     width: 100%;
+     padding: 10px 10px;
+     display: block;
+     margin-bottom: 4px;
+     background-color: #7c0cb9;
+     color: rgb(255, 255, 255);
+     border: none;
+     cursor: pointer;
+     
+      }
+   
+   
