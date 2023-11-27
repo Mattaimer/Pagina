@@ -8,7 +8,7 @@
 
  
 *{
-    background-color: rgb(51, 32, 63);
+    background-color: #000000;
 }
 
 .contenedor-acordeon{
@@ -16,7 +16,7 @@
     max-width: 600px;
     margin: auto;
     margin-top: 30px;
-    background-color: rgb(51, 32, 63);
+    background-color: #000000;
 }
 .contenedor-acordeon h2{
     text-align: center;
@@ -26,7 +26,7 @@
     color: #ffffff;
 }
 .acordeon{
-    background: #1C0F24;
+    background: #0d0d0d;
 }
 .acordeon label{
     cursor: pointer;
@@ -65,8 +65,8 @@
   padding: 20px 20px;
   display: block;
   margin-bottom: 4px;
-  background-color: #1C0F24;
-  color: rgb(255, 255, 255);
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
   border: none;
   cursor: pointer;
    }
