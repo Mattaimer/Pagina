@@ -8,7 +8,7 @@
 
  
 *{
-    background-color: #000000;
+    background-color: #562E70;
 }
 
 .contenedor-acordeon{
@@ -16,7 +16,7 @@
     max-width: 600px;
     margin: auto;
     margin-top: 30px;
-    background-color: #000000;
+    background-color: #562E70;
 }
 .contenedor-acordeon h2{
     text-align: center;
@@ -24,9 +24,10 @@
     margin: 10px;
     margin-bottom: 20px;
     color: #ffffff;
+    
 }
 .acordeon{
-    background: #0d0d0d;
+    background: #562E70;
 }
 .acordeon label{
     cursor: pointer;
@@ -69,18 +70,26 @@
   color: rgb(0, 0, 0);
   border: none;
   cursor: pointer;
+  
    }
 
 
 
 
 .box{
+    
+
+
     width: 200px;
     height: 200px;
     background-image: url(dad.jpg);
     background-size: cover;
     border-radius: 50%;
     margin: auto;
+    
+    box-shadow: 5px 5px 25px rgb(0, 0, 0) inset;
+
+
   }
 
 
@@ -97,6 +106,8 @@
      color: rgb(255, 255, 255);
      border: none;
      cursor: pointer;
+
+     
      
       }
    
