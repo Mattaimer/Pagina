@@ -18,14 +18,34 @@
     margin-top: 30px;
     background-color: #562E70;
 }
-.contenedor-acordeon h2{
+
+
+
+
+
+
+.contenedor-acordeon h1{
     text-align: center;
     font-size: 40px;
-    margin: 10px;
-    margin-bottom: 20px;
+    margin: 24px;
+    margin-bottom: 40px;
     color: #ffffff;
     
 }
+
+.contenedor-acordeon h2{
+    text-align: center;
+    font-size: 15px;
+    margin: 40px;
+    margin-bottom: 40px;
+    color: #ffffff;
+    
+}
+
+
+
+
+
 .acordeon{
     background: #562E70;
 }
@@ -110,5 +130,4 @@
      
      
       }
-   
    
