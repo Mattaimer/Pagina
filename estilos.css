@@ -11,7 +11,6 @@
  
 *{
     background-color: #562E70;
-    
 }
     
 
@@ -21,21 +20,15 @@
     margin: auto;
     margin-top: 30px;
     background-color: #562E70;
-    
-    
-    
-
 }
 
 
 .acordeon{
     background: #562E70;
-    
 }
 
 
 .box{
-    
     width: 200px;
     height: 200px;
     background-image: url(dad.webp);
@@ -48,14 +41,7 @@
     -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
-
-
-
-
-    
   }
-
-
 
 
   .contenedor-acordeon h1{
@@ -64,17 +50,8 @@
     margin: 24px;
     margin-bottom: 40px;
     color: #ffffff;
-
-    text-shadow: black 0.1em 0.1em 0.1em
-    
+    text-shadow: black 0.1em 0.1em 0.1em    
 }
-
-
-
-
-
-
-
 
 .contenedor-acordeon h2{
     text-align: center;
@@ -82,12 +59,8 @@
     margin: 40px;
     margin-bottom: 40px;
     color: #ffffff;
-
     text-shadow: black 0.1em 0.1em 0.1em
-    
 }
-
-
 
 
 .acordeon label{
@@ -104,7 +77,6 @@
 }
 
 
-
 .acordeon .contenido-acordeon{
     cursor: pointer;
     padding: 0px;
@@ -113,10 +85,12 @@
     overflow: hidden;
     transition: all 300ms ease;
 }
+
 .btn-acordeon:checked ~ .contenido-acordeon{
     max-height: 1800px;
     padding: 0px 0px;
 }
+
 .btn-acordeon{
     display: none;
 }
@@ -131,13 +105,11 @@
   background-color: #ffffff;
   color: rgb(0, 0, 0);
   border: none;
-  cursor: pointer;
-  
+  cursor: pointer;  
    }
 
 
   .boton3 {
-
     text-decoration: none;
     font-size: 20px;
      width: 100%;
@@ -150,7 +122,4 @@
      cursor: pointer;
 
      text-shadow: black 0.1em 0.1em 0.1em
-
-     
-     
       }
