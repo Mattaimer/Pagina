@@ -1,156 +1,113 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Raleway', sans-serif;
-}
- 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Mattaimer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+<body>
+
+   <div class="contenedor-acordeon">
+       <div class="box"></div>
+       <h1>Mattaimer</h1>
+
+    <div class="acordeon">
+
+        <input type="radio" name="acordeon" id="btn-acordeon1" class="btn-acordeon">
+
+                <label for="btn-acordeon1">
+                Donación - Donation
+                </label>
+
+        <div class="contenido-acordeon">
+
+         <a class="botonp" href="https://link.mercadopago.com.ar/mattaimer">Mercado Pago </a><p></p>
+         <a class="botonp" href="https://www.paypal.com/paypalme/Mattaimer">PayPal</a><p></p>
+        
+        </div>
+
+    </div>
+
+    
+       <div class="acordeon">
+        <input type="radio" name="acordeon" id="btn-acordeon2" class="btn-acordeon">
+        <label for="btn-acordeon2">
+            Instagram
+        </label>
+        <div class="contenido-acordeon">
+            <a class="botonp" href="https://www.instagram.com/mattaimer/">Mattaimer</a><p></p>
+            <a class="botonp" href="https://www.instagram.com/mattaimer.es/">Mattaimer en español, cuenta de videos cortos</a><p></p>
+            <a class="botonp" href="https://www.instagram.com/mattaimer.en/">Mattaimer in english, account of short videos</a><p></p>
+
+          
+        </div>
+    </div>
 
 
+    <div class="acordeon">
+        <input type="radio" name="acordeon" id="btn-acordeon3" class="btn-acordeon">
+        <label for="btn-acordeon3">
+            Facebook
+        </label>
+        <div class="contenido-acordeon">
+            
+            <a class="botonp" href="https://www.facebook.com/profile.php?id=100085378501599">Los archivos de Mattaimer</a><p></p>
+            <a class="botonp" href="https://www.facebook.com/profile.php?id=100083188012107">The Mattaimer files</a><p></p>
 
-*{
-    background-color: #562E70;
-}
-
-.contenedor-acordeon{
-    width: 100%;
-    max-width: 600px;
-    margin: auto;
-    margin-top: 30px;
-    background-color: #562E70;
-}
-
-.acordeon{
-    background: #562E70;
-}
+            
+        </div>
+    </div>
 
 
+    <div class="acordeon">
+        <input type="radio" name="acordeon" id="btn-acordeon4" class="btn-acordeon">
+        <label for="btn-acordeon4">
+            Youtube
+        </label>
+        <div class="contenido-acordeon">
 
+            <a class="botonp" href="https://www.youtube.com/channel/UCCHjCWDrAZsXtzgpFRAtG8Q">Los archivos de Mattaimer</a><p></p>
+            <a class="botonp" href="https://www.youtube.com/channel/UCGmtrDp19eX0qg12sNC_RYA">The Mattaimer files</a><p></p>
 
-
-.box{
-    width: 200px;
-    height: 200px;
-    background-image: url(dad.webp);
-    background-size: cover;
-    border-radius: 50%;
-    margin: auto;    
+        </div>
+        
+    </div>
   
-    -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
-}
+      <a class="boton2" href="https://www.reddit.com/user/Mattaimer">Reddit </a><p></p>
+
+      <a class="boton2" href="https://twitter.com/mattaimer">Twitter </a><p></p>
+
+      <div class="acordeon">
+        <input type="radio" name="acordeon" id="btn-acordeon5" class="btn-acordeon">
+        <label for="btn-acordeon5">
+            Tiktok
+        </label>
+
+        <div class="contenido-acordeon">
+
+            <a class="botonp" href="https://www.tiktok.com/@mattaimer">Mattaimer</a><p></p>
+            
+        </div>
+        
+    </div>
+     
+      <a class="boton2" href="https://www.twitch.tv/mattaimer">Twich </a><p></p>
+
+      <div class="acordeon">
+        <input type="radio" name="acordeon" id="btn-acordeon6" class="btn-acordeon">
+        <label for="btn-acordeon6">
+            Email
+        </label>
+
+        <div class="contenido-acordeon">
+            <a class="botonp" >mattaimer@protonmail.com</a><p></p>
+        </div>
+
+      </div>
 
 
 
-
-
-
-.contenedor-acordeon h1{
-    text-align: center;
-    font-size:40px;
-    margin: 24px;
-    margin-bottom: 40px;
-    color: #ffffff;
-    text-shadow: black 0.1em 0.1em 0.1em    
-}
-.contenedor-acordeon h2{
-    text-align: center;
-    font-size: 14px;
-    margin: 40px;
-    margin-bottom: 40px;
-    color: #ffffff;
-    text-shadow: black 0.1em 0.1em 0.1em
-}
-
-
-
-
-
-.acordeon label{
-    cursor: pointer;
-    display: block;
-    padding: 20px;
-    font-size: 20px;
-    background: #7c0cb9;
-    color: #fff;
-    cursor: pointer;
-    margin-bottom: 4px;
-    transition: all 300ms ease;
-    text-shadow: black 0.1em 0.1em 0.1em
-}
-
-
-.acordeon label:hover {
-    background: black;
-}
-
-
-
-
-
-.acordeon .contenido-acordeon{
-    cursor: pointer;
-    padding: 0px;
-    margin: 0px 0px;
-    max-height: 0px;
-    overflow: hidden;
-    transition: all 300ms ease;
-}
-
-.btn-acordeon:checked ~ .contenido-acordeon{
-    max-height: 1800px;
-    padding: 0px 0px;
-}
-
-.btn-acordeon{
-    display: none;
-}
-
-
-
-
-
-
-
-
-
-
-.botonp {
- text-decoration: none;
-  width: 100%;
-  padding: 20px 20px;
-  display: block;
-  margin-bottom: 4px;
-  background-color: #ffffff;
-  color: rgb(0, 0, 0);
-  border: none;
-  cursor: pointer;  
-   }
-
-.botonp:hover {
-    background: black;
-    color: rgb(255, 255, 255)
-}
-
-
-
-
-.boton2 {
-        text-decoration: none;
-        font-size: 20px;
-         width: 100%;
-         padding: 20px 20px;
-         display: block;
-         margin-bottom: 4px;
-         background-color: #7c0cb9;
-         color: rgb(255, 255, 255);
-         border: none;
-         cursor: pointer;  
-         text-shadow: black 0.1em 0.1em 0.1em
-}
-
-.boton2:hover {
-background: black;
-}
+      <h2>© 2024 Mattaimer . Sitio web alojado en GitHub Pages.</h2>
