@@ -11,13 +11,16 @@
  padding: .1px;
 }
 
+
 .contenedor-acordeon{
     width: 90%;
     max-width: 500px;
     
     margin: auto;
     margin-top: 20px;
-    background-color:#5a078780;
+    background-color:#fafafa10;
+    backdrop-filter: blur(0.4rem);
+    -webkit-backdrop-filter:  blur(0.4rem);
     
 
     padding: 20px 8px;
@@ -25,15 +28,15 @@
     -moz-border-radius: 10px 10px 10px 10px;
     -webkit-border-radius: 10px 10px 10px 10px;
 
-    border: 1px solid #ffffff;
+    border: 3px solid #fafafa10;
 
     position: relative;
     z-index: 1;
 
-    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+  
     
+
+
 
 }
 
@@ -91,12 +94,17 @@
     margin-bottom: 4px;
     transition: all 300ms ease;
 
-   
+    border: 2px solid #fafafa10;
+
+
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
    
 }
 
 .acordeon label:hover {
-    background: black;
+    background: #ffffff30;
 }
 
 .acordeon .contenido-acordeon{
@@ -129,17 +137,25 @@
      padding: 20px 20px;
      display: block;
      margin-bottom: 4px;
-     background-color: #ffffff50;
+     background-color: #ffffff30;
      color: rgb(255, 255, 255);
      border: none;
      cursor: pointer;  
 
-     border: 1px solid #ffffff;
+     border: 2px solid #fafafa10;
+
+
+     border-radius: 5px 5px 5px 5px;
+     -moz-border-radius: 5px 5px 5px 5px;
+     -webkit-border-radius: 5px 5px 5px 5px;
+
+
+     
 
       }
    
    .botonp:hover {
-       background: black;
+       background: #ffffff30;
        color: rgb(255, 255, 255)
    }
 
@@ -158,11 +174,15 @@
          border: none;
          cursor: pointer;  
 
-         border: 1px solid #ffffff;
+         border: 2px solid #fafafa10;
+
+         border-radius: 5px 5px 5px 5px;
+         -moz-border-radius: 5px 5px 5px 5px;
+         -webkit-border-radius: 5px 5px 5px 5px;
 }
 
 .boton2:hover {
-background: black;
+background: #ffffff30;
 
 }
 
