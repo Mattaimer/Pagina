@@ -7,7 +7,7 @@
 }
  
 *{
- background: #000000 ;
+ background: #00000000 ;
  padding: .1px;
 }
 
@@ -34,7 +34,6 @@
     z-index: 1;
 
   
-    
 
 
 
@@ -62,9 +61,7 @@
     position: relative;
     z-index: 1;
 
-
-  
-
+    
 }
 
 
@@ -76,6 +73,9 @@
     margin-bottom: 20px;
     color: #ffffff;
     background: #00000000;   
+
+    text-shadow: black 0.1em 0.1em 0.2em
+
 }
 
 
@@ -85,7 +85,7 @@
     display: block;
     padding: 20px;  
     border: 1px solid #ffffff;
-    font-size: 18px;
+    font-size: 20px;
     background:transparent;
     
 
@@ -94,18 +94,21 @@
     margin-bottom: 4px;
     transition: all 300ms ease;
 
-    border: 2px solid #fafafa10;
+    border: 3px solid #fafafa10;
 
 
     border-radius: 5px 5px 5px 5px;
     -moz-border-radius: 5px 5px 5px 5px;
     -webkit-border-radius: 5px 5px 5px 5px;
+
+    text-shadow: black 0.1em 0.1em 0.2em
+
    
 }
 
-.acordeon label:hover {
-    background: #ffffff30;
-}
+
+
+
 
 .acordeon .contenido-acordeon{
     cursor: pointer;
@@ -136,8 +139,11 @@
      width: 100%;
      padding: 20px 20px;
      display: block;
+
+     font-size: 18px;
+    
      margin-bottom: 4px;
-     background-color: #ffffff30;
+     background-color: #ffffff2f;
      color: rgb(255, 255, 255);
      border: none;
      cursor: pointer;  
@@ -149,21 +155,18 @@
      -moz-border-radius: 5px 5px 5px 5px;
      -webkit-border-radius: 5px 5px 5px 5px;
 
-
+     text-shadow: black 0.1em 0.1em 0.2em
      
 
       }
    
-   .botonp:hover {
-       background: #ffffff30;
-       color: rgb(255, 255, 255)
-   }
+ 
 
 
 
 .boton2 {
         text-decoration: none;
-        font-size: 18px;
+        font-size: 20px;
 
          width: 100%;
          padding: 20px 20px;
@@ -174,17 +177,24 @@
          border: none;
          cursor: pointer;  
 
-         border: 2px solid #fafafa10;
+         border: 3px solid #fafafa10;
 
          border-radius: 5px 5px 5px 5px;
          -moz-border-radius: 5px 5px 5px 5px;
          -webkit-border-radius: 5px 5px 5px 5px;
+
+
+         text-shadow: black 0.1em 0.1em 0.2em
+
 }
 
-.boton2:hover {
-background: #ffffff30;
 
-}
+
+
+
+
+
+
 
 .imagenfondo { 
     background-image: url(2.webp);
@@ -197,8 +207,14 @@ background: #ffffff30;
 .fin{
     text-align: center;
     font-size: 10px;
-    margin: 20px;
-    margin-bottom: 20px;
+    
+
+    height: 100px;
+    width: 100%;
+
     color: #ffffff;
-    background: #00000000;   
+    background: #000000;   
+    
+
+    padding: 40px 40px;
 }
