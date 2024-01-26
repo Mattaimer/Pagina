@@ -18,7 +18,7 @@
     
     margin: auto;
     margin-top: 20px;
-    background-color:#fafafa10;
+    background-color:#fafafa08;
     backdrop-filter: blur(0.4rem);
     -webkit-backdrop-filter:  blur(0.4rem);
     
@@ -28,7 +28,7 @@
     -moz-border-radius: 10px 10px 10px 10px;
     -webkit-border-radius: 10px 10px 10px 10px;
 
-    border: 3px solid #fafafa10;
+    border: 2px solid #fafafa08;
 
     position: relative;
     z-index: 1;
@@ -68,13 +68,13 @@
 
 .contenedor-acordeon h1{
     text-align: center;
-    font-size: 40px;
+    font-size: 36px;
     margin: 10px;
     margin-bottom: 20px;
     color: #ffffff;
     background: #00000000;   
 
-    text-shadow: black 0.1em 0.1em 0.2em
+    
 
 }
 
@@ -83,9 +83,9 @@
 .acordeon label{
     cursor: pointer;
     display: block;
-    padding: 20px;  
-    border: 1px solid #ffffff;
-    font-size: 20px;
+    padding: 18px;  
+    border: 2px solid #fafafa08;
+    font-size: 18px;
     background:transparent;
     
 
@@ -94,14 +94,14 @@
     margin-bottom: 4px;
     transition: all 300ms ease;
 
-    border: 3px solid #fafafa10;
+    border: 2px solid #fafafa08;
 
 
     border-radius: 5px 5px 5px 5px;
     -moz-border-radius: 5px 5px 5px 5px;
     -webkit-border-radius: 5px 5px 5px 5px;
 
-    text-shadow: black 0.1em 0.1em 0.2em
+    
 
    
 }
@@ -137,25 +137,25 @@
 .botonp {
     text-decoration: none;
      width: 100%;
-     padding: 20px 20px;
+     padding: 18px 18px;
      display: block;
 
-     font-size: 18px;
+     font-size: 14px;
     
      margin-bottom: 4px;
-     background-color: #ffffff2f;
+     background-color: #fafafa08;
      color: rgb(255, 255, 255);
      border: none;
      cursor: pointer;  
 
-     border: 2px solid #fafafa10;
+     border: 2px solid #fafafa08;
 
 
      border-radius: 5px 5px 5px 5px;
      -moz-border-radius: 5px 5px 5px 5px;
      -webkit-border-radius: 5px 5px 5px 5px;
 
-     text-shadow: black 0.1em 0.1em 0.2em
+     
      
 
       }
@@ -166,10 +166,10 @@
 
 .boton2 {
         text-decoration: none;
-        font-size: 20px;
+        font-size: 18px;
 
          width: 100%;
-         padding: 20px 20px;
+         padding: 18px 18px;
          display: block;
          margin-bottom: 4px;
          background-color: transparent;
@@ -177,14 +177,14 @@
          border: none;
          cursor: pointer;  
 
-         border: 3px solid #fafafa10;
+         border: 2px solid #fafafa08;
 
          border-radius: 5px 5px 5px 5px;
          -moz-border-radius: 5px 5px 5px 5px;
          -webkit-border-radius: 5px 5px 5px 5px;
 
 
-         text-shadow: black 0.1em 0.1em 0.2em
+         
 
 }
 
@@ -192,29 +192,49 @@
 
 
 
-
-
-
-
-.imagenfondo { 
-    background-image: url(2.webp);
-    background-position: center;
-    background-size: cover;
-    height: 1200px;
-}
 
 
 .fin{
-    text-align: center;
-    font-size: 10px;
-    
 
-    height: 100px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 8px;
+    
+    height: 80px;
     width: 100%;
 
     color: #ffffff;
     background: #000000;   
     
 
-    padding: 40px 40px;
+    padding: 50px 50px;
+
 }
+
+
+
+
+html, body { height: 100%; }
+
+body {
+    background: radial-gradient(circle, #10001a , #10001a 30%,#000000 );
+
+    
+}
+
+body:after {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; left: 0; bottom: 0;
+    
+    background: radial-gradient(circle,  #872bbe 30%, #872bbe 30%, transparent);
+    animation: color 9s infinite ease-out alternate;
+    opacity: 0;
+}
+
+
+@keyframes color {
+    0% {  background: radial-gradient(circle, #872bbe 30%, #872bbe 30%, transparent); }
+    100% { opacity: 1; }
+}
+
