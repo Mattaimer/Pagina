@@ -194,47 +194,44 @@
 
 
 
-.fin{
 
-    margin-top: 20px;
+.fin{
     text-align: center;
     font-size: 8px;
     
-    height: 80px;
+
+    height: 100px;
     width: 100%;
 
     color: #ffffff;
     background: #000000;   
     
 
-    padding: 50px 50px;
-
+    padding: 40px 40px;
 }
 
 
 
 
-html, body { height: 100%; }
+.gradient {
+	
+	height: 100vh;
+    height: 1150px;
 
-body {
-    background: radial-gradient(circle, #10001a , #10001a 30%,#000000 );
-
-    
+	background: linear-gradient(334deg, #ae71d1, #3d005e, #000000);
+	background-size: 180% 180%;
+	animation: gradient-animation 6s ease infinite;
 }
 
-body:after {
-    content: '';
-    position: absolute;
-    top: 0; right: 0; left: 0; bottom: 0;
-    
-    background: radial-gradient(circle,  #872bbe 30%, #872bbe 30%, transparent);
-    animation: color 9s infinite ease-out alternate;
-    opacity: 0;
-}
-
-
-@keyframes color {
-    0% {  background: radial-gradient(circle, #872bbe 30%, #872bbe 30%, transparent); }
-    100% { opacity: 1; }
+@keyframes gradient-animation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
