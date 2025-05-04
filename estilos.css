@@ -8,15 +8,13 @@
 }
 
 body {
-    background: transparent;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    background: #00000000;
+    margin: 0;
+    overflow-y: auto; /* Esto permite hacer scroll vertical */
 }
 
 .contenedor-acordeon {
-    animation: text-focus-in 0.8s ease-out both;
+    animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
     width: 90%;
     max-width: 500px;
     margin: 20px auto;
@@ -28,9 +26,14 @@ body {
     border: 2px solid #fafafa05;
     position: relative;
     z-index: 1;
+    overflow: hidden;
 }
 
-.acordeon {
+
+
+
+.acordeon{
+
     background: transparent;
     position: relative;
     z-index: 1;
@@ -42,25 +45,44 @@ body {
  * See http://animista.net/license for more info. 
  * w: http://animista.net, t: @cssanimista
  * ---------------------------------------------- */
-@keyframes text-focus-in {
+
+/**
+ * ----------------------------------------
+ * animation text-focus-in
+ * ----------------------------------------
+ */
+ @keyframes text-focus-in {
     0% {
-        filter: blur(12px);
-        opacity: 0;
+      filter: blur(12px);
+      opacity: 0;
     }
     100% {
-        filter: blur(0px);
-        opacity: 1;
+      filter: blur(0px);
+      opacity: 1;
     }
-}
+  }
 
-.gradient {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+
+
+
+
+
+
+
+
+
+
+  .gradient {
+    height: 100%;
+    width: 100%;
     z-index: -1;
     background: radial-gradient(circle, #000000, #000000 25%, #000000);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+   
 }
 
 .gradient:after {
@@ -70,85 +92,218 @@ body {
     right: 0;
     left: 0;
     bottom: 0;
-    background: radial-gradient(circle, #5c0a8f, #400664, #ffffff);
-    animation: color 4s infinite ease-in-out alternate;
+    background: radial-gradient(circle, #5c0a8f, #400664, #000000);
+    animation: color 10s infinite ease-out alternate;
     opacity: 0;
 }
 
 @keyframes color {
-    0% { background: radial-gradient(circle, #5c0a8f, #400664, #ffffff); }
+    0% { background: radial-gradient(circle, #5c0a8f, #400664, #000000); }
     100% { opacity: 1; }
 }
 
-.box {
+
+
+
+
+
+
+
+.box{
+
+
     width: 180px;
     height: 180px;
     background-image: url(dad.webp);
     background-size: cover;
     border-radius: 50%;
-    margin: auto;
+    margin: auto;    
+  
     position: relative;
     z-index: 1;
+
+    
 }
 
-.contenedor-acordeon h1 {
+
+
+.contenedor-acordeon h1{
+
     text-align: center;
     font-size: 36px;
-    margin: 10px 0 20px;
+    margin: 10px;
+    margin-bottom: 20px;
     color: #ffffff;
-    background: transparent;
+    background: #00000000;   
+
 }
 
-.acordeon label,
-.toggle-btn,
-.botonp,
-.boton2 {
+
+
+
+
+
+
+
+.acordeon label{
     cursor: pointer;
     display: block;
-    padding: 18px;
-    font-size: 18px;
-    color: #fff;
-    background-color: transparent;
+    padding: 18px;  
     border: 2px solid #fafafa08;
-    border-radius: 5px;
+    font-size: 18px;
+    background:transparent;
+    
+
+    color: #fff;    
+    cursor: pointer;
     margin-bottom: 4px;
     transition: all 300ms ease;
-    text-decoration: none;
+
+    border: 2px solid #fafafa05;
+
+
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+
 }
 
-.acordeon label:hover,
-.toggle-btn:hover,
-.botonp:hover,
-.boton2:hover {
-    box-shadow: 0 0 40px #7d10c5, 0 0 100px #7d10c5, 0 0 200px #7d10c5, 0 0 300px #7d10c5, 0 0 400px #7d10c5;
-    background-color: #7d10c5;
-}
 
-.acordeon .contenido-acordeon {
-    padding: 0;
-    margin: 0;
-    max-height: 0;
+
+.acordeon label:hover {
+    box-shadow: 0 0 5px #7d10c5, 0 0 25px #7d10c5, 0 0 50px #7d10c5, 0 0 100px #7d10c5, 0 0 200px #7d10c5;
+    background: #7d10c5;
+    }
+
+
+
+
+
+
+
+
+.acordeon .contenido-acordeon{
+    cursor: pointer;
+    padding: 0px;
+    margin: 0px 0px;
+    max-height: 0px;
     overflow: hidden;
     transition: all 300ms ease;
     background: transparent;
+    
 }
 
-.btn-acordeon:checked ~ .contenido-acordeon {
+
+
+.btn-acordeon:checked ~ .contenido-acordeon{
     max-height: 1800px;
+    padding: 0px 0px;
 }
 
-.btn-acordeon {
+.btn-acordeon{
     display: none;
 }
 
-.fin {
-    z-index: 1;
-    text-align: center;
-    font-size: 12px;
-    margin-top: auto;
-    color: #ffffff;
-    background: #000000;
-    padding: 30px 20px;
-    flex-shrink: 0;
+
+
+.botonp {
+    text-decoration: none;
+     width: 100%;
+     padding: 18px 18px;
+     display: block;
+
+     font-size: 14px;
+    
+     margin-bottom: 4px;
+     background-color: #ffffff08;
+     color: rgb(255, 255, 255);
+     border: none;
+     cursor: pointer;  
+
+     border: 2px solid #fafafa05;
+
+
+     border-radius: 5px 5px 5px 5px;
+     -moz-border-radius: 5px 5px 5px 5px;
+     -webkit-border-radius: 5px 5px 5px 5px;
+
+     
+     
+
+      }
+   
+ 
+
+
+
+.boton2 {
+        text-decoration: none;
+        font-size: 18px;
+
+         width: 100%;
+         padding: 18px 18px;
+         display: block;
+         margin-bottom: 4px;
+         background-color: transparent;
+         color: rgb(255, 255, 255);
+         border: none;
+         cursor: pointer;  
+
+         border: 2px solid #fafafa08;
+
+         border-radius: 5px 5px 5px 5px;
+         -moz-border-radius: 5px 5px 5px 5px;
+         -webkit-border-radius: 5px 5px 5px 5px;
 }
 
+.boton2:hover {
+box-shadow: 0 0 5px #7d10c5, 0 0 25px #7d10c5, 0 0 50px #7d10c5, 0 0 100px #7d10c5, 0 0 200px #7d10c5;
+background-color: #7d10c5;
+}
+
+
+
+
+
+.fin{
+    z-index: 1;
+    text-align: center;
+    font-size: 8px;
+    
+    margin-top: 40px;
+    height: 100px;
+    width: 100%;
+
+    color: #ffffff;
+    background: #000000;   
+
+    padding: 40px 40px;
+
+}
+
+
+
+
+
+
+
+
+
+.toggle-btn {
+    font-size: 18px;
+    padding: 18px;
+    display: block;
+    margin-bottom: 4px;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border: 2px solid #fafafa05;
+    cursor: pointer;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.toggle-btn:hover {
+    box-shadow: 0 0 5px #7d10c5, 0 0 25px #7d10c5, 0 0 50px #7d10c5, 0 0 100px #7d10c5, 0 0 200px #7d10c5;
+    background-color: #7d10c5;
+}
