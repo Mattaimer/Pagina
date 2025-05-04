@@ -7,20 +7,16 @@
     font-family: 'Raleway', sans-serif;
 }
 
-html, body {
-    height: 100%;
-    background: #000000;
-    overflow-y: auto;
+body {
+    background: transparent;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-}
-
-body {
-    flex: 1;
+    justify-content: flex-start;
 }
 
 .contenedor-acordeon {
-    animation: text-focus-in 4s ease-out both;
+    animation: text-focus-in 0.8s ease-out both;
     width: 90%;
     max-width: 500px;
     margin: 20px auto;
@@ -32,7 +28,6 @@ body {
     border: 2px solid #fafafa05;
     position: relative;
     z-index: 1;
-    overflow: hidden;
 }
 
 .acordeon {
@@ -59,15 +54,13 @@ body {
 }
 
 .gradient {
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    background: radial-gradient(circle, #000000, #000000 25%, #000000);
     position: fixed;
     top: 0;
-    right: 0;
     left: 0;
+    right: 0;
     bottom: 0;
+    z-index: -1;
+    background: radial-gradient(circle, #000000, #000000 25%, #000000);
 }
 
 .gradient:after {
@@ -77,13 +70,13 @@ body {
     right: 0;
     left: 0;
     bottom: 0;
-    background: radial-gradient(circle, #5d00a8, #25003d);
-    animation: color 4s infinite ease-out alternate;
+    background: radial-gradient(circle, #5c0a8f, #400664, #ffffff);
+    animation: color 4s infinite ease-in-out alternate;
     opacity: 0;
 }
 
 @keyframes color {
-    0% { background: radial-gradient(circle, #5d00a8, #25003d); }
+    0% { background: radial-gradient(circle, #5c0a8f, #400664, #ffffff); }
     100% { opacity: 1; }
 }
 
@@ -116,7 +109,7 @@ body {
     font-size: 18px;
     color: #fff;
     background-color: transparent;
-    border: 2px solid #fafafa05;
+    border: 2px solid #fafafa08;
     border-radius: 5px;
     margin-bottom: 4px;
     transition: all 300ms ease;
@@ -127,7 +120,7 @@ body {
 .toggle-btn:hover,
 .botonp:hover,
 .boton2:hover {
-    box-shadow: 0 0 60px #7d10c5, 0 0 120px #7d10c5, 0 0 240px #7d10c5, 0 0 360px #7d10c5, 0 0 480px #ffffff;
+    box-shadow: 0 0 40px #7d10c5, 0 0 100px #7d10c5, 0 0 200px #7d10c5, 0 0 300px #7d10c5, 0 0 400px #7d10c5;
     background-color: #7d10c5;
 }
 
@@ -151,11 +144,11 @@ body {
 .fin {
     z-index: 1;
     text-align: center;
-    font-size: 8px;
+    font-size: 12px;
     margin-top: auto;
     color: #ffffff;
     background: #000000;
-    padding: 40px;
+    padding: 30px 20px;
     flex-shrink: 0;
 }
 
